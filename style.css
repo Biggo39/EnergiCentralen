@@ -22,7 +22,6 @@ nav{
     font-size: 3rem;
     flex: 1;
     text-align: right;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -47,6 +46,7 @@ nav{
 .navBtn:hover {
     padding: 40px 0;
     color: #4DFFAA;
+    text-decoration: underline #4DFFAA;
     transition: all 0.2s ease 0s;
 }
 
@@ -129,7 +129,6 @@ h1{
 }
 
 h2{
-    padding: 24px 24px 0px 24px;
     font-family: bebas neue, open sans, sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -146,7 +145,19 @@ h2{
     margin-bottom: 48px;
 }
 
-.popular-item {
+.productpage {
+    display: flex;
+    gap: 50px;
+    max-width: 1600px; 
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap; 
+    margin-bottom: 48px;
+}
+
+.produkt {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,11 +166,11 @@ h2{
     border-radius: 8px;
     padding: 16px; 
     transition: border 0.3s ease;
-    width: 220px; 
+    width: 170px; 
     text-align: center;
 }
 
-.popular-item img {
+.produkt img {
     height: 300px; 
     width: 100%;
     box-sizing: border-box; 
@@ -168,17 +179,17 @@ h2{
     aspect-ratio: 3/4;
 }
 
-.popular-item:hover {
+.produkt:hover {
     border: 5px solid #4DFFAA;
 }
 
-.popular-item:hover h2 {
+.produkt:hover h2 {
     transition: all 0.2s ease 0s;
     color: #4DFFAA;
 }
 
 .stars i {
-    color: goldenrod;
+    color: #4DFFAA;
     margin-right: 5px; 
     font-size: 20px; 
 }
@@ -193,7 +204,7 @@ h2{
     font-size: 18px;
 }
 
-.supportbild {
+.bannerland {
     z-index: 1;
     background-color: var(--black);
     color: #fff;
@@ -215,18 +226,18 @@ h2{
 
 
 
-.supportbild h2 {
+.bannerland h2 {
     font-family: bebas neue, open sans, sans-serif;
     font-size: 4rem;
     margin-bottom: 0px;
 }
 
-.supportbild p {
+.bannerland p {
     font-family: bebas neue, open sans, sans-serif;
     font-size: 2rem;
 }
 
-.support-btn {
+.bannerland-btn {
     font-family: bebas neue, open sans, sans-serif;
     background-color: #4DFFAA;
     color: black;
@@ -238,8 +249,42 @@ h2{
     transition: background 0.3s ease;
 }
 
-.support-btn:hover {
+.bannerland-btn:hover {
     background-color: #32cc88;
+}
+
+.bannerenergi {
+    z-index: 1;
+    background-color: var(--black);
+    color: #fff;
+    text-align: left;
+    background-image: linear-gradient(45deg, #000000db 1%, #fff0 88%), url("Bilder/Screenshot 2025-01-28 204602.png");                 
+    background-size: 100% 100%, cover; 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    padding: 20px 80px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+
+
+.bannerenergi h2 {
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.bannerenergi p {
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 1.5rem;
 }
 
 .footer{
@@ -299,7 +344,7 @@ border-radius: 50%;
 }
 
 .footerbottom{
-    background-color: black;
+    background-color: #111;
     text-align: center;
 }
 
