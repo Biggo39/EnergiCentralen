@@ -1,0 +1,310 @@
+* a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.Logo{
+    cursor: pointer;
+}
+
+nav{
+    padding: 12px 24px 0px 24px;
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 3rem;
+    flex: 1;
+    text-align: right;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.navCon {
+    height: 100%;
+
+    display: flex;
+    gap: 12px;
+}
+
+.navBtn {
+    padding: 48px 3px;
+
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease 0s;
+}
+
+.navBtn:hover {
+    padding: 40px 0;
+    color: #4DFFAA;
+    transition: all 0.2s ease 0s;
+}
+
+.active{
+    color:#4DFFAA;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.card {
+    flex-grow: 1;
+
+    min-width: 128px;
+    padding: 256px 0;
+
+    text-align: center;
+
+    
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    transition: opacity 0.2s ease;
+
+    display: grid;
+    place-content: center;
+
+    text-decoration: none;
+}
+
+.bild1{
+    background-image: url("/bilder/Screenshot 2025-01-28 195016.png");
+}
+
+.bild2{
+    background-image: url("/bilder/Screenshot 2025-01-28 194724.png");
+}
+
+.card:hover {
+    opacity: 0.5;
+    transition: 0.2s ease;
+}
+
+span {
+    visibility: hidden;
+    font-family: bebas neue;
+    font-size: 4rem;
+    
+}
+
+.card:hover span {
+    visibility: visible;
+}
+
+@media (max-width: 400px) {
+    .navCon {
+        flex-direction: column;
+    }
+
+    .navBtn {
+        width: max-content;
+        padding: 12px;
+    }
+}
+
+h1{
+    padding: 12px 24px 0px 24px;
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: underline #4DFFAA;
+}
+
+h2{
+    padding: 24px 24px 0px 24px;
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.popular {
+    display: flex;
+    gap: 50px;
+    max-width: 1600px; 
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap; 
+    margin-bottom: 48px;
+}
+
+.popular-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 16px; 
+    transition: border 0.3s ease;
+    width: 220px; 
+    text-align: center;
+}
+
+.popular-item img {
+    height: 300px; 
+    width: 100%;
+    box-sizing: border-box; 
+    object-fit: contain; 
+    padding: 0 10px; 
+    aspect-ratio: 3/4;
+}
+
+.popular-item:hover {
+    border: 5px solid #4DFFAA;
+}
+
+.popular-item:hover h2 {
+    transition: all 0.2s ease 0s;
+    color: #4DFFAA;
+}
+
+.stars i {
+    color: goldenrod;
+    margin-right: 5px; 
+    font-size: 20px; 
+}
+
+.smak{
+    font-family: Open Sans, sans-serif;
+}
+
+.price {
+    font-family: Open Sans, sans-serif;
+    color: gray;
+    font-size: 18px;
+}
+
+.supportbild {
+    z-index: 1;
+    background-color: var(--black);
+    color: #fff;
+    text-align: left;
+    background-image: linear-gradient(45deg, #000000db 1%, #fff0 88%), url("/bilder/alora-griffiths-BNrqnvtzXio-unsplash.jpg");                 
+    background-size: 100% 100%, cover; 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    padding: 20px 80px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+
+
+
+.supportbild h2 {
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.supportbild p {
+    font-family: bebas neue, open sans, sans-serif;
+    font-size: 2rem;
+}
+
+.support-btn {
+    font-family: bebas neue, open sans, sans-serif;
+    background-color: #4DFFAA;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.support-btn:hover {
+    background-color: #32cc88;
+}
+
+.footer{
+    background-color: #111;
+}
+
+.footercontainer{
+    padding: 20px;
+    background-color: #111;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+
+.socials a{
+text-decoration: none;
+padding: 10px;
+background-color: black;
+margin: 10px;
+border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.5em;
+    color: white;
+    opacity: 0,7;
+}
+
+.socials a:hover{
+    transition: all 0.5s;
+    background-color: #3dc885;
+}
+
+.footernav{
+    margin: 30px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li a{
+    font-family: bebas neue, open sans, sans-serif;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footernav ul li a:hover{
+    color: #4DFFAA;
+}
+
+.footerbottom{
+    background-color: black;
+    text-align: center;
+}
+
+.footerbottom p{
+    font-family: bebas neue, open sans, sans-serif;
+    color: white;
+    opacity: 0.7;
+}
